@@ -334,6 +334,79 @@ img {
   border-radius: 50px;
 }
 
+/* Section-Catalog */
+
+.catalog-title {
+  margin-bottom: 40px;
+
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.96px;
+}
+
+/* catalog-list */
+
+.catalog-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 30px;
+}
+
+.catalog-link {
+  width: 368px;
+  height: 414px;
+
+  border-radius: 30px;
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  background-color: #f3f3f3;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-image-wrapper {
+  flex: 1;
+  padding: 34px 38px 0 38px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.catalog-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* catalog-info */
+.catalog-info {
+  padding: 0 32px 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.catalog-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 100% */
+  letter-spacing: -0.4px;
+}
+
+.catalog-price {
+  color: rgba(12, 12, 12, 0.5);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.28px;
+}
+
 /* Section-Advertisement */
 
 .advertisement-box {

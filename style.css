@@ -458,3 +458,73 @@ img {
   font-weight: 500;
   white-space: nowrap;
 }
+
+/* Section-Review */
+
+.reviews-title {
+  margin-bottom: 40px;
+  text-align: left;
+
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.96px;
+}
+
+/* list-reviews */
+.reviews-list {
+  display: flex;
+  gap: 20px;
+}
+
+.reviews-item {
+  display: flex;
+  padding: 32px 36px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  max-width: 370px;
+
+  border-radius: 30px;
+  background-color: #f3f3f3;
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.review-avatar {
+  border-radius: 56px;
+  border: 2px solid #fbfbfb;
+}
+
+/* content-review */
+.review-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.review-name {
+  text-align: center;
+
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -0.36px;
+}
+
+.review-text {
+  color: rgba(12, 12, 12, 0.4);
+  text-align: center;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.32px;
+}

@@ -459,7 +459,157 @@ img {
   white-space: nowrap;
 }
 
-/* Section-Review */
+/* Section-Sale */
+
+.sale-title {
+  margin-bottom: 40px;
+
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.96px;
+}
+
+.sale-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.sale-thumbs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.sale-thumbs-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 132px;
+  height: 132px;
+
+  border-radius: 20px;
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  background: #f3f3f3;
+}
+
+.sale-thumbs-img {
+}
+
+/* Middle column: main photo */
+.sale-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 428px;
+  height: 558px;
+
+  border-radius: 50px;
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  background: #f3f3f3;
+}
+
+.sale-preview-img {
+}
+
+/* Right column: info */
+.sale-info {
+  padding: 60px;
+
+  width: 530px;
+  height: 558px;
+
+  border-radius: 50px;
+  background-color: #3350e9;
+
+  color: #fbfbfb;
+}
+
+.sale-name {
+  width: 389px;
+
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.64px;
+
+  margin-bottom: 10px;
+}
+
+.sale-tag {
+  color: rgba(251, 251, 251, 0.5);
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.28px;
+
+  margin-bottom: 20px;
+}
+
+.sale-prices {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  margin-bottom: 30px;
+}
+
+.sale-price-new {
+  padding: 8px 12px;
+
+  border-radius: 8px;
+  background: rgba(251, 251, 251, 0.1);
+
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.4px;
+}
+
+.sale-price-old {
+  color: rgba(251, 251, 251, 0.5);
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: -0.24px;
+  text-decoration-line: line-through;
+}
+
+.sale-description {
+  color: rgba(251, 251, 251, 0.7);
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.32px;
+
+  margin-bottom: 40px;
+}
+
+.sale-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.sale-features-item {
+  padding: 8px 12px;
+
+  border-radius: 8px;
+  border: 1px solid rgba(251, 251, 251, 0.2);
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+/* Section-Reviews */
 
 .reviews-title {
   margin-bottom: 40px;

@@ -24,21 +24,21 @@
                 <a class="nav-link" href="#about">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Catalog</a>
+                <a class="nav-link" href="#catalog">Catalog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Sale</a>
+                <a class="nav-link" href="#sale">Sale</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Reviews</a>
+                <a class="nav-link" href="#reviews">Reviews</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Contact Us</a>
+                <a class="nav-link" href="#contact">Contact Us</a>
               </li>
             </ul>
           </nav>
 
-          <address>
+          <address class="addr">
             <ul class="addr-item">
               <li>
                 <a class="icon-link" href="">
@@ -63,11 +63,63 @@
               </li>
             </ul>
           </address>
+
+          <button class="burger-btn" type="button">
+            <svg class="burger-icon" width="25" height="12">
+              <use href="./images/icon.svg#icon-icon"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
 
-    <!-- Main  -->
+    <!-- Mobile-Menu -->
+    <div class="mobile-menu">
+      <div class="mobile-menu-container">
+        <button class="mobile-menu-close" type="button">
+          <svg class="icon" width="24" height="24">
+            <use href="./images/icon.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <nav class="mobile-nav">
+          <ul class="mobile-nav-list">
+            <li><a class="mobile-nav-link" href="#home">Home</a></li>
+            <li><a class="mobile-nav-link" href="#about">About Us</a></li>
+            <li><a class="mobile-nav-link" href="#catalog">Catalog</a></li>
+            <li><a class="mobile-nav-link" href="#sale">Sale</a></li>
+            <li><a class="mobile-nav-link" href="#reviews">Reviews</a></li>
+            <li><a class="mobile-nav-link" href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <ul class="mobile-socials">
+          <li>
+            <a class="icon-link" href="#">
+              <svg class="icon" width="18" height="18">
+                <use href="./images/icon.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="icon-link" href="#">
+              <svg class="icon" width="18" height="18">
+                <use href="./images/icon.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="icon-link" href="#">
+              <svg class="icon" width="18" height="18">
+                <use href="./images/icon.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main -->
     <main class="main-content">
       <!-- Section-Hero -->
       <section class="hero-section" id="home">
@@ -87,6 +139,7 @@
             </div>
             <div class="hero-team">
               <img
+                class="hero-team-img"
                 srcset="./images/image@1x.png 1x, ./images/image@2x.png 2x"
                 src="./images/image@1x.png"
                 width="146"
@@ -98,16 +151,7 @@
             </div>
           </div>
 
-          <div class="hero-box-image">
-            <img
-              srcset="./images/image01@1x.jpg 1x, ./images/image01@2x.jpg 2x"
-              src="./images/image01@2x.jpg"
-              width="1150"
-              height="500"
-              alt="casio g-shock ga-100"
-              loading="lazy"
-            />
-          </div>
+          <div class="hero-box-image"></div>
         </div>
       </section>
 
@@ -150,7 +194,7 @@
       </section>
 
       <!-- Section-Catalog -->
-      <section class="catalog-section">
+      <section class="catalog-section" id="catalog">
         <div class="container">
           <h2 class="container-title">Catalog</h2>
 
@@ -298,7 +342,7 @@
       </section>
 
       <!-- Section-Sale -->
-      <section class="sale-section">
+      <section class="sale-section" id="sale">
         <div class="container">
           <h2 class="container-title">Sale</h2>
 
@@ -411,8 +455,7 @@
       </section>
 
       <!-- Section-Reviews -->
-
-      <section class="reviews-section">
+      <section class="reviews-section" id="reviews">
         <div class="container">
           <h2 class="container-title">Reviews</h2>
 
@@ -500,7 +543,7 @@
       </section>
 
       <!-- Section-Contact -->
-      <section class="contact-section">
+      <section class="contact-section" id="contact">
         <div class="container">
           <h2 class="container-title">Contact Us</h2>
 
@@ -607,22 +650,22 @@
           <nav class="nav">
             <ul class="footer-nav">
               <li class="footer-nav-item">
-                <a class="footer-nav-link" href="#">Home</a>
+                <a class="footer-nav-link" href="#home">Home</a>
               </li>
               <li class="footer-nav-item">
-                <a class="footer-nav-link" href="#">About Us</a>
+                <a class="footer-nav-link" href="#about">About Us</a>
               </li>
               <li class="footer-nav-item">
-                <a class="footer-nav-link" href="#">Catalog</a>
+                <a class="footer-nav-link" href="#catalog">Catalog</a>
               </li>
               <li class="footer-nav-item">
-                <a class="footer-nav-link" href="#">Sale</a>
+                <a class="footer-nav-link" href="#sale">Sale</a>
               </li>
               <li class="footer-nav-item">
-                <a class="footer-nav-link" href="#">Reviews</a>
+                <a class="footer-nav-link" href="#reviews">Reviews</a>
               </li>
               <li class="footer-nav-item">
-                <a class="footer-nav-link" href="#">Contact Us</a>
+                <a class="footer-nav-link" href="#contact">Contact Us</a>
               </li>
             </ul>
           </nav>
@@ -648,5 +691,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>

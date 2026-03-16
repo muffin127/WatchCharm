@@ -19,3 +19,18 @@ mobileLinks.forEach((link) => {
     document.body.style.overflow = "";
   });
 });
+
+// ----- MOBILE CATALOG -----
+const catalogBtn = document.querySelector(".catalog-button");
+const hiddenItems = document.querySelectorAll(".catalog-link.hidden");
+
+catalogBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  hiddenItems.forEach((item) => {
+    item.classList.remove("hidden");
+    item.classList.add("visible");
+  });
+
+  catalogBtn.style.display = "none";
+});
